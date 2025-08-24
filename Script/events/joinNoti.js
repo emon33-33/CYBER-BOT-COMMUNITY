@@ -65,7 +65,46 @@ ${global.config.PREFIX}Help\n${global.config.PREFIX} Manu
             }
             memLength.sort((a, b) => a - b);
             
-            (typeof threadData.customJoin == "undefined") ? msg = "╭•┄┅═══❁🌺❁═══┅┄•╮\n   আসসালামু আলাইকুম-!!🖤\n╰•┄┅═══❁🌺❁═══┅┄•╯ \n\n    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n                ❥𝐍𝐄𝐖~\n\n        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n        [   {name} ]\n\n༆-✿ আপনাকে আমাদের࿐\n\n{threadName}\n\n🌺✨!!—এর পক্ষ-থেকে-!!✨🌺\n\n❤️🫰_ভালোবাস_অভিরাম_🫰❤️\n\n༆-✿আপনি_এই_গ্রুপের {soThanhVien} নং মেম্বার࿐\n\n╭•┄┅═══❁🌺❁═══┅┄•╮\n  🌸   𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️  🌸\n╰•┄┅═══❁🌺❁═══┅┄•╯" : msg = threadData.customJoin;
+const newMember = event.logMessageData.addedParticipants[0];
+const name = newMember.fullName;
+const uid = newMember.userFbId;
+
+(typeof threadData.customJoin == "undefined") 
+? msg = `
+   আসসালামু আলাইকুম-!!🖤 
+
+    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨
+
+        @${name} 👋
+
+আপনাকে আমাদের
+
+${threadName}
+
+✨!!—এর পক্ষ-থেকে-!!✨
+
+ভালোবাসা অভিরাম
+আপনি এই গ্রুপের ${soThanhVien} নং মেম্বার
+
+╲\\ | /╱╭━━━━━━━╮
+CYBER MUSLIM
+💥DEFENSE💥
+╱/ ⚠CMD⚠ \\╲
+╰━━━━━━━╯╱/ | \\╲`
+: msg = threadData.customJoin;
+api.sendMessage(
+  {
+    body: msg,
+    mentions: [
+      {
+        tag: `@${name}`, 
+        id: uid         
+      }
+    ]
+  },
+  event.threadID
+);
+
             msg = msg
             .replace(/\{name}/g, nameArray.join(', '))
             .replace(/\{type}/g, (memLength.length > 1) ?  'Friends' : 'Friend')
