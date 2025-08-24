@@ -64,41 +64,33 @@ ${global.config.PREFIX}Help\n${global.config.PREFIX} Manu
                 memLength.push(participantIDs.length - i++);
             }
             memLength.sort((a, b) => a - b);
-            
-const newMember = event.logMessageData.addedParticipants[0];
-const name = newMember.fullName;
-const uid = newMember.userFbId;
+
 
 (typeof threadData.customJoin == "undefined") 
-? msg = `
-   আসসালামু আলাইকুম-!!🖤 
-
-    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨
-
-        @${name} 👋
-
-আপনাকে আমাদের
-
-${threadName}
-
-✨!!—এর পক্ষ-থেকে-!!✨
-
-ভালোবাসা অভিরাম
-আপনি এই গ্রুপের ${soThanhVien} নং মেম্বার
-
-╲\\ | /╱╭━━━━━━━╮
-CYBER MUSLIM
-💥DEFENSE💥
-╱/ ⚠CMD⚠ \\╲
-╰━━━━━━━╯╱/ | \\╲`
+? msg = 
+   "   আসসালামু আলাইকুম-!!🖤 \n\n" +
+   "    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n" +
+   "        @" + name + " 👋\n\n" +
+   "আপনাকে আমাদের\n\n" +
+   threadName + "\n\n" +
+   "✨!!—এর পক্ষ-থেকে-!!✨\n\n" +
+   "ভালোবাসা অভিরাম\n" +
+   "আপনি এই গ্রুপের " + soThanhVien + " নং মেম্বার\n\n" +
+   "╲\\ | /╱╭━━━━━━━╮\n" +
+   "CYBER MUSLIM\n" +
+   "💥DEFENSE💥\n" +
+   "╱/ ⚠CMD⚠ \\╲\n" +
+   "╰━━━━━━━╯╱/ | \\╲"
 : msg = threadData.customJoin;
+
+
 api.sendMessage(
   {
     body: msg,
     mentions: [
       {
-        tag: `@${name}`, 
-        id: uid         
+        tag: "@" + name,
+        id: uid          
       }
     ]
   },
