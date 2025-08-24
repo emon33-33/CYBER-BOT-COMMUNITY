@@ -66,7 +66,7 @@ ${global.config.PREFIX}Help\n${global.config.PREFIX} Manu
             memLength.sort((a, b) => a - b);
 
 
-(typeof threadData.customJoin == "undefined") 
+ (typeof threadData.customJoin == "undefined") 
 ? msg = 
    "   আসসালামু আলাইকুম-!!🖤 \n\n" +
    "    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n" +
