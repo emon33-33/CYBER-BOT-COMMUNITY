@@ -14,7 +14,7 @@ module.exports.config = {
     cooldowns: 5
 };
 
-module.exports.run = async function({ api, event }) {
+ module.exports.run = async function({ api, event }) {
     var time = moment().tz("Asia/Dhaka").format("DD/MM/YYYY hh:mm:ss A");
 
     var callback = () => api.sendMessage({
