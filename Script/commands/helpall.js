@@ -157,7 +157,7 @@ module.exports.run = function ({
  | 🄲🄾🄼🄼🄰🄽🄳 🄻🄸🅂🅃 
 ╰──────•◈•──────╯`;
     const _0x217452 = "╭──────•◈•──────╮\n│𝗨𝘀𝗲 " + _0x4722cf + "help [Name?]\n│𝗨𝘀𝗲 " + _0x4722cf + `help [Page?]
-│𝗡𝗔𝗠𝗘 𝗢𝗪𝗡𝗘𝗥 : │ Ullash ッ
+│𝗡𝗔𝗠𝗘 𝗢𝗪𝗡𝗘𝗥 : 💯🎯 ᴄʏʙᴇʀ ᴍᴜꜱʟɪᴍ ᴅᴇꜰᴇɴꜱᴇ 🎯💯
 │𝗧𝗢𝗧𝗔𝗟 : [` + _0x45ae1c.length + "]\n│📛🄿🄰🄶🄴📛 : [" + _0x42ee77 + "/" + Math.ceil(_0x45ae1c.length / _0x1f48e3) + "]\n╰──────•◈•──────╯";
     var _0x316826 = ["https://i.postimg.cc/QdgH08j6/Messenger-creation-C2-A39-DCF-A8-E7-4-FC7-8715-2559476-FEEF4.gif", "https://i.postimg.cc/QdgH08j6/Messenger-creation-C2-A39-DCF-A8-E7-4-FC7-8715-2559476-FEEF4.gif", "https://i.postimg.cc/QdgH08j6/Messenger-creation-C2-A39-DCF-A8-E7-4-FC7-8715-2559476-FEEF4.gif", "https://i.postimg.cc/QdgH08j6/Messenger-creation-C2-A39-DCF-A8-E7-4-FC7-8715-2559476-FEEF4.gif", "https://i.postimg.cc/QdgH08j6/Messenger-creation-C2-A39-DCF-A8-E7-4-FC7-8715-2559476-FEEF4.gif", "https://i.imgur.com/ybM9Wtr.jpeg", "https://i.postimg.cc/QdgH08j6/Messenger-creation-C2-A39-DCF-A8-E7-4-FC7-8715-2559476-FEEF4.gif"];
     var _0x23cd20 = () => _0x64d666.sendMessage({
